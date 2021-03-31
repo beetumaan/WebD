@@ -1,0 +1,108 @@
+.main{
+	width: 1000px;
+	height:540px;
+	background: url("image/1.jpg");	
+	border: black 2px solid;
+} 
+
+.row1{
+	font-size:32px;
+	width:1000px;
+	height: 100px;
+}
+
+.row2{
+	width:1000px;
+	height: 40px;
+}
+
+.r2col{
+
+	font-size:20px;
+	float:left;
+	width:196px;
+	border: black 2px solid;
+	height: 26px;
+	font-weight: bold;
+	background-color: aqua;
+	color: red;
+	text-transform: capitalize;
+	padding-top: 10px;
+}
+.r2col:hover{
+	width:190px;
+	height: 30px;
+	background-color: red;
+	color: aqua;
+}
+.row3{
+	width:1000px;
+	height: 200px;
+}
+
+.r3c1{
+	float:left;
+	width:250px;
+	height: 200px;
+	background-color: red;
+}
+
+.r3c2{
+	float:left;
+	width:750px;
+	height: 200px;
+	background-color: green;
+}
+
+.r3c1r{
+	font-size:20px;
+	width:246px;
+	height: 36px;
+	border: black 2px solid;
+	background-color: pink;
+	font-weight: bolder;
+	color: green;
+	text-transform: capitalize;
+}
+.r3c1r:hover{
+	background-color: green;
+	color:pink;
+	border: black 2px solid;
+
+}
+
+.row4{
+	font-size: 20px;
+	font-weight: bold;
+	width:996px;
+	height: 46px;
+	border: black 2px solid;
+	background-color: yellow;
+	letter-spacing: 2px;
+}
+
+.row4:hover{
+	border: yellow 2px solid;
+	background-color: green;
+	color: yello;
+}
+
+.row5{
+	width:1000px;
+	height: 100px;
+}
+
+.r5c{
+	float:left;
+	width:333px;
+	height: 100px;
+}
+
+.row6{
+	font-size: 20px;
+	font-weight: bold;
+	color: navy;
+	width:1000px;
+	height: 50px;
+	text-transform: capitalize;
+}

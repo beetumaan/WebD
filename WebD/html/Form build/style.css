@@ -1,0 +1,27 @@
+.main{
+	float: left;
+	width: 200px;
+	height: 50px;
+	background-color: brown;
+}
+
+.main2{
+	float: left;
+	width: 200px;
+	height: 50px;
+	background-color: blue;
+}
+
+.main3{
+	float: left;
+	width: 200px;
+	height: 50px;
+	background-color: pink;
+}
+
+.main4{
+	float: left;
+	width: 700px;
+	height: 50px;
+	background-color: green;
+}
