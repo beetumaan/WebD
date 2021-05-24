@@ -15,10 +15,10 @@
 <body>
 <div class="">
 	<!-- header part start -->
-	<header class="container-fluid">
+	<header>
 		<div class="row">
 			<div class="col-12">
-				<nav class=" nav navbar navbar-expand-sm navbar-dark fixed-top">
+				<nav class="nav navbar navbar-expand-sm navbar-dark fixed-top">
 					<a href="index.html"><img src="image/logo2.png" class="ml-3" height="40px" title="19am logo"></a>
 
 					<button class="navbar-toggler" type="button" data-target="#menu1" data-toggle="collapse">
@@ -39,7 +39,10 @@
 							<li class="nav-item"><a class="nav-link ml-2 text-white " href="#"> My Acoount</a></li>
 							<li class="nav-item">
 								<div class="dropdown">
-									<button class="ml-2 btn btn-outline-dark text-white" data-toggle="dropdown"><i class="fas fa-shopping-cart"></i><span class="badge badge-pill badge-primary">5</span></button>						
+									<button class="ml-2 btn btn-outline-dark text-white" data-toggle="dropdown">
+										<i class="fas fa-shopping-cart"></i>
+										<span class="badge badge-pill badge-primary">5</span>
+									</button>						
 									<div class="dropdown-menu bg-light">
 										<a class="dropdown-item" href="#">Notification 1</a>
 										<a class="dropdown-item" href="#">Notification 2</a>
@@ -107,7 +110,7 @@
 	<!-- header part end -->
 
 	<!-- about us start-->
-	<div class="container-fluid p-5" style="background: #a3e6b5";>
+	<div class=" p-5" style="background: #a3e6b5";>
 		<p class=" card-title abts">ABOUT US</p>
 		<div class="row r3">
 			<div class="col-lg-6">
@@ -136,7 +139,7 @@
 		<br><br>
 	</div>
 	<!-- our service part start -->
-	<div class="container-fluid service p-5">
+	<div class=" service p-5">
 		<h1 class="abts">OUR SERVICES</h1>
 		<p class="serv">Our members understand your comforts and deliver you in right way!</p>
 		<div class="row ">
@@ -169,7 +172,7 @@
 	<!-- our service part end -->
 
 	<!-- team section start -->
-	<div class="container-fluid p-5" style="background: #a3e6b5;">
+	<div class=" p-5" style="background: #a3e6b5;">
 		<h1 class="abts">OUR PLAYERS</h1>
 		<p class="serv">Coming together is the beginning. Staying together is progress. Working together is success.</p>
 
@@ -278,7 +281,7 @@
 	</div>
 
 	<!-- call to action start -->
-	<div class="container-fluid p-5 cta">
+	<div class=" p-5 cta">
 		<div class="row">
 			<div class="col-lg-12 mb-5">
 				<h1 class="abts text-white" > The Creative shoes Agency for you </h1>
@@ -300,7 +303,7 @@
 		<br>
 	</div>
 	<!-- shop start -->
-	<div class="container-fluid p-5	" style="background: #eae6f7">
+	<div class=" p-5	" style="background: #eae6f7">
 		<h1 class="abts">OUR Stores</h1>
 		<p class="serv">Coming together is the beginning. Staying together is progress. Working together is success.</p>
 		<div class="row">
@@ -325,7 +328,7 @@
 	</div>
 
 	<!-- footar part -->
-	<div class="container-fluid p-5" style="background: #152238;">
+	<div class=" p-5" style="background: #152238;">
 		<div class="row text-white">
 
 			<div class="col-lg-4">
@@ -372,7 +375,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid pr-5 pl-5 text-white" style="background: #152238">
+	<div class=" pr-5 pl-5 text-white" style="background: #152238">
 		<div class="row">
 			<div class="col-lg-5 form-inline">
 				Newsletter 
@@ -418,11 +421,15 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("[data-toggle='tooltip']").tooltip();
-
-			$("#fp").click(function(){
-				$("#signinmodal").modal('hide');
-				$("#fpass").modal('show');
-			})
+		})
+		$(document).scroll(function(){
+				var sc = $(this).scrollTop();
+				if(sc>350){
+					$("nav").addClass('header-fixed');
+				}
+				else{
+					$("nav").removeClass('header-fixed');
+				}
 		})
 	</script>
 </html>
